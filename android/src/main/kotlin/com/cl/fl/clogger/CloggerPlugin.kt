@@ -1,12 +1,14 @@
 package com.cl.fl.clogger
 
-import androidx.annotation.NonNull;
+import android.util.Log
+import androidx.annotation.NonNull
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
+import org.json.JSONObject
 
 /** CloggerPlugin */
 public class CloggerPlugin: FlutterPlugin, MethodCallHandler {
@@ -15,15 +17,6 @@ public class CloggerPlugin: FlutterPlugin, MethodCallHandler {
     channel.setMethodCallHandler(CloggerPlugin());
   }
 
-  // This static function is optional and equivalent to onAttachedToEngine. It supports the old
-  // pre-Flutter-1.12 Android projects. You are encouraged to continue supporting
-  // plugin registration via this function while apps migrate to use the new Android APIs
-  // post-flutter-1.12 via https://flutter.dev/go/android-project-migration.
-  //
-  // It is encouraged to share logic between onAttachedToEngine and registerWith to keep
-  // them functionally equivalent. Only one of onAttachedToEngine or registerWith will be called
-  // depending on the user's project. onAttachedToEngine or registerWith must both be defined
-  // in the same class.
   companion object {
     @JvmStatic
     fun registerWith(registrar: Registrar) {
@@ -33,8 +26,19 @@ public class CloggerPlugin: FlutterPlugin, MethodCallHandler {
   }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-    if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+    if (call.method == "clogger") {
+      if (call.arguments is JSONObject) {
+        val arguments = call.arguments as JSONObject
+        val name = arguments.optString("name", "")
+        val message = arguments.optString("message", "")
+        when (arguments.optInt("level")) {
+          LogLevel.info.level -> Log.i(name, message)
+          LogLevel.warn.level -> Log.w(name, message)
+          LogLevel.error.level -> Log.e(name, message)
+          LogLevel.debug.level -> Log.d(name, message)
+        }
+      }
+     result.success(Empty)
     } else {
       result.notImplemented()
     }
@@ -43,3 +47,12 @@ public class CloggerPlugin: FlutterPlugin, MethodCallHandler {
   override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
   }
 }
+
+enum class LogLevel(val level:Int){
+  info(0),
+  warn(1),
+  error(2),
+  debug(3)
+}
+
+object Empty
