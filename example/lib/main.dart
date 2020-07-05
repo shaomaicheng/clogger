@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
 import 'package:clogger/clogger.dart';
+import 'package:clogger/native_test.dart';
+import 'package:clogger/transfer/strategy.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   MyApp() {
-    Clogger.getInstance().init(CLoggerConfig());
+    Clogger.getInstance().init(CLoggerConfig(
+        printType: LogPrintType.dart,
+        transfer: true,
+        transferType: TransferType.timing));
   }
 
   @override
@@ -72,7 +77,20 @@ class _MyAppState extends State<MyApp> {
                     },
                     title: 'print a error log',
                   ),
-                )
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  child: Button(
+                    () {
+                      int result = NativeCallTest.nativeAddFTest(1, 2);
+                      print(result.toString());
+//                      Clogger.getInstance()
+//                          .logger
+//                          .debug('native_call_test', result.toString());
+                    },
+                    title: 'native call test',
+                  ),
+                ),
               ],
             ),
           )),
