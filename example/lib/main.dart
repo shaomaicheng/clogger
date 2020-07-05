@@ -1,56 +1,113 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
 
-import 'package:flutter/services.dart';
 import 'package:clogger/clogger.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
+  MyApp() {
+    Clogger.getInstance().init();
+  }
+
   @override
   _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
-
   @override
   void initState() {
     super.initState();
-    initPlatformState();
-  }
-
-  // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {
-    String platformVersion;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    try {
-      platformVersion = await Clogger.platformVersion;
-    } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
-    }
-
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
-    if (!mounted) return;
-
-    setState(() {
-      _platformVersion = platformVersion;
-    });
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          appBar: AppBar(
+            title: const Text('Plugin example app'),
+          ),
+          body: SingleChildScrollView(
+            child: Row(
+              children: <Widget>[
+                Container(
+                  margin: EdgeInsets.all(10),
+                  child: Button(
+                    () {
+                      Clogger.getInstance()
+                          .logger
+                          .info('info_demo', 'this is info info');
+                    },
+                    title: 'print a info log',
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  child: Button(
+                    () {
+                      Clogger.getInstance()
+                          .logger
+                          .warn('warn_demo', 'this is warn info');
+                    },
+                    title: 'print a warn log',
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  child: Button(
+                    () {
+                      Clogger.getInstance()
+                          .logger
+                          .debug('error_demo', 'this is error info');
+                    },
+                    title: 'print a error log',
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  child: Button(
+                    () {
+                      Clogger.getInstance()
+                          .logger
+                          .error('error_demo', 'this is error info');
+                    },
+                    title: 'print a error log',
+                  ),
+                )
+              ],
+            ),
+          )),
+    );
+  }
+}
+
+class Button extends StatelessWidget {
+  final String title;
+  final Color titleColor;
+  final double width, height;
+  final GestureTapCallback onPress;
+
+  Button(this.onPress, {this.title, this.titleColor, this.width, this.height});
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+        child: InkWell(
+      borderRadius: BorderRadius.all(Radius.circular(5)),
+      onTap: onPress,
+      child: Ink(
+        padding: EdgeInsets.all(5),
+        width: (width == null || width == 0) ? 120 : width,
+        height: (height == null || height == 0) ? 44 : height,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            color: Theme.of(context).primaryColor),
+        child: Center(
+          child: Text(
+            title,
+            style: TextStyle(color: this.titleColor ?? Colors.white),
+          ),
         ),
       ),
-    );
+    ));
   }
 }

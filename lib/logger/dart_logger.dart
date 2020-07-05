@@ -1,33 +1,32 @@
 import 'package:ansicolor/ansicolor.dart';
 import 'package:clogger/logger/base_logger.dart';
-import 'dart:developer';
 
 import 'package:flutter/cupertino.dart';
+
 /// print logs use dart api
 
 class DartLogger extends BaseLogger {
   @override
   debug(String name, String message) {
-    // TODO: implement debug
-    throw UnimplementedError();
+    AnsiPen ansiPen = AnsiPen()..blue(bold: true);
+    debugPrint(ansiPen(message));
   }
 
   @override
   error(String name, String message) {
     AnsiPen ansiPen = AnsiPen()..red(bold: true);
-   debugPrint(ansiPen(message));
-  log(message, name: name);
+    debugPrint(ansiPen(message));
   }
 
   @override
   info(String name, String message) {
-    // TODO: implement info
-    throw UnimplementedError();
+    AnsiPen ansiPen = AnsiPen()..white(bold: true);
+    debugPrint(ansiPen(message));
   }
 
   @override
   warn(String name, String message) {
-    // TODO: implement warn
-    throw UnimplementedError();
+    AnsiPen ansiPen = AnsiPen()..yellow(bold: true);
+    debugPrint(ansiPen(message));
   }
 }
