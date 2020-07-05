@@ -1,6 +1,8 @@
 import 'package:clogger/logger/base_logger.dart';
 import 'package:clogger/logger/dart_logger.dart';
 import 'package:clogger/logger/platform_logger.dart';
+import 'package:clogger/logger/print_and_transfer_logger.dart';
+import 'package:clogger/transfer/strategy.dart';
 
 class Clogger {
   static Clogger _clogger;
@@ -22,13 +24,26 @@ class Clogger {
     return _inital();
   }
 
-  init({LogPrintType printType = LogPrintType.dart}) {
-    if (printType == LogPrintType.dart) {
-      logger = DartLogger();
-    } else if (printType == LogPrintType.platform) {
-      logger = PlatformLogger();
+  init(
+      {LogPrintType printType = LogPrintType.dart,
+      bool transfer = false,
+      TransferType transferType = TransferType.immediately}) {
+    if (!transfer) {
+      if (printType == LogPrintType.dart) {
+        logger = DartLogger();
+      } else if (printType == LogPrintType.platform) {
+        logger = PlatformLogger();
+      } else {
+        logger = DartLogger();
+      }
     } else {
-      logger = DartLogger();
+      if (printType == LogPrintType.dart) {
+        logger = PrintAndTransferLogger(printType, transferType);
+      } else if (printType == LogPrintType.platform) {
+        logger = PrintAndTransferLogger(printType, transferType);
+      } else {
+        logger = PrintAndTransferLogger(printType, transferType);
+      }
     }
   }
 }
