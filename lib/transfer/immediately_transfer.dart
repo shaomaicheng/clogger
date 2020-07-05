@@ -13,4 +13,7 @@ class ImmediatelyTransfer extends CLoggerTransfer {
 
   @override
   void transferLogPetch(List<LogMeta> logMetas) {}
+
+  @override
+  void insertLog(LogMeta logMeta) {}
 }

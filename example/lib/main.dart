@@ -6,7 +6,7 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   MyApp() {
-    Clogger.getInstance().init();
+    Clogger.getInstance().init(CLoggerConfig());
   }
 
   @override
@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
             title: const Text('Plugin example app'),
           ),
           body: SingleChildScrollView(
-            child: Row(
+            child: Column(
               children: <Widget>[
                 Container(
                   margin: EdgeInsets.all(10),

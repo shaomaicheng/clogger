@@ -7,26 +7,28 @@ import 'package:clogger/transfer/timing_transfer.dart';
 import 'package:clogger/transfer/transfer.dart';
 
 class TransferLogger extends BaseLogger {
-  TransferStrategy transferStrategy;
+  TransferStrategy _transferStrategy;
 
-  CLoggerTransfer transfer;
+  CLoggerTransfer _transfer;
 
-  TransferLogger(this.transferStrategy) {
-    switch (transferStrategy.type) {
+  TransferLogger(this._transferStrategy) {
+    switch (_transferStrategy.type) {
       case TransferType.immediately:
-        transfer = ImmediatelyTransfer();
+        _transfer = ImmediatelyTransfer();
         break;
       case TransferType.timing:
-        transfer = TimingTransfer();
+        _transfer = TimingTransfer();
         break;
       case TransferType.pull:
-        transfer = PullTransfer();
+        _transfer = PullTransfer();
         break;
     }
   }
 
   @override
-  debug(String name, String message) {}
+  debug(String name, String message) {
+    
+  }
 
   @override
   error(String name, String message) {}

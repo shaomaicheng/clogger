@@ -9,7 +9,7 @@ class Clogger {
 
   BaseLogger logger;
 
-  Clogger._init() {}
+  Clogger._init();
 
   factory Clogger() => _inital();
 
@@ -24,28 +24,47 @@ class Clogger {
     return _inital();
   }
 
-  init(
-      {LogPrintType printType = LogPrintType.dart,
-      bool transfer = false,
-      TransferType transferType = TransferType.immediately}) {
-    if (!transfer) {
-      if (printType == LogPrintType.dart) {
-        logger = DartLogger();
-      } else if (printType == LogPrintType.platform) {
-        logger = PlatformLogger();
-      } else {
-        logger = DartLogger();
+  init(CLoggerConfig config) {
+    _initLogger(config);
+  }
+
+  _initLogger(CLoggerConfig config) {
+    if (!config.transfer) {
+      switch (config.printType) {
+        case LogPrintType.dart:
+          logger = DartLogger();
+          break;
+        case LogPrintType.platform:
+          logger = PlatformLogger();
+          break;
+          defalut:
+          logger = DartLogger();
+          break;
       }
     } else {
-      if (printType == LogPrintType.dart) {
-        logger = PrintAndTransferLogger(printType, transferType);
-      } else if (printType == LogPrintType.platform) {
-        logger = PrintAndTransferLogger(printType, transferType);
-      } else {
-        logger = PrintAndTransferLogger(printType, transferType);
+      LogPrintType printType = config.printType;
+      TransferType transferType = config.transferType;
+      switch (printType) {
+        case LogPrintType.dart:
+          logger = PrintAndTransferLogger(printType, transferType);
+          break;
+        case LogPrintType.platform:
+          logger = PrintAndTransferLogger(printType, transferType);
+          break;
+          defalut:
+          logger = PrintAndTransferLogger(printType, transferType);
+          break;
       }
     }
   }
 }
 
 enum LogPrintType { dart, platform }
+
+class CLoggerConfig {
+  LogPrintType printType;
+  bool transfer;
+  TransferType transferType;
+
+  CLoggerConfig({this.printType, this.transfer, this.transferType});
+}
