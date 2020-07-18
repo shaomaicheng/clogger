@@ -1,3 +1,2 @@
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/x86
+-- Configuring incomplete, errors occurred!
+See also "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/x86/CMakeFiles/CMakeOutput.log".

@@ -29,18 +29,6 @@
   },
   {
     "level": "INFO",
-    "message": "done executing cmake"
-  },
-  {
-    "level": "INFO",
-    "message": "write build output /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/x86/build_output.txt"
-  },
-  {
-    "level": "INFO",
-    "message": "write command file /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/x86/build_command.txt"
-  },
-  {
-    "level": "INFO",
-    "message": "JSON generation completed without problems"
+    "message": "JSON generation completed with problem. Exception: Build command failed.\nError while executing process /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake with arguments {-H/Users/chenglei/flutter_project/flutter_project/clogger/android -B/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/x86 -DANDROID_ABI\u003dx86 -DANDROID_PLATFORM\u003dandroid-16 -DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/x86 -DCMAKE_BUILD_TYPE\u003dDebug -DANDROID_NDK\u003d/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570 -DCMAKE_TOOLCHAIN_FILE\u003d/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake -DCMAKE_MAKE_PROGRAM\u003d/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/ninja -GAndroid Gradle - Ninja}\n-- Configuring incomplete, errors occurred!\nSee also \"/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/x86/CMakeFiles/CMakeOutput.log\".\n\nCMake Error at CMakeLists.txt:1 (cmake_minimum_required):\n  CMake 3.16 or higher is required.  You are running version 3.6.0-rc2\n\n\n"
   }
 ]
