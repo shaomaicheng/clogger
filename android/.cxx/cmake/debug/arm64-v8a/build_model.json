@@ -1,0 +1,70 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/example/android",
+      "sdkFolder": "/Users/chenglei/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates",
+      "gradleModulePathName": ":clogger",
+      "moduleRootFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/android",
+      "makeFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/example/android/.cxx",
+      "cxxFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx",
+      "ndkFolder": "/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/lib",
+    "objFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj",
+    "jsonFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug",
+    "gradleBuildOutputFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cxx/debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARM64_V8A",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/arm64-v8a",
+  "jsonFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/arm64-v8a/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cxx/debug/arm64-v8a",
+  "objFolder": "/Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/arm64-v8a",
+  "buildCommandFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/arm64-v8a/build_command.txt",
+  "buildOutputFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/arm64-v8a/build_output.txt",
+  "modelOutputFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/arm64-v8a/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cxx/debug/arm64-v8a/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cxx/debug/arm64-v8a/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cxx/debug/arm64-v8a/build_generation_state.json",
+    "cacheKeyFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cxx/debug/arm64-v8a/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cxx/debug/arm64-v8a/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cxx/debug/arm64-v8a/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cxx/debug/arm64-v8a/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/arm64-v8a/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/arm64-v8a/compile_commands.json"
+}

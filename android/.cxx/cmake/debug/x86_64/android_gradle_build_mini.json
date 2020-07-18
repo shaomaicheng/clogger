@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/chenglei/flutter_project/flutter_project/clogger/android/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/x86_64 --target clean"
+  ],
+  "libraries": {
+    "logan-Debug-x86_64": {
+      "artifactName": "logan",
+      "buildCommand": "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/x86_64 --target logan",
+      "abi": "x86_64",
+      "output": "/Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/x86_64/liblogan.so"
+    }
+  }
+}

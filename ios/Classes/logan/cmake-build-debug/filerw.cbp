@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="filerw"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\mbedtls\;CMake Files\mbedtls\library\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clogan">
+				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/libclogan.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clogan"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clogan/fast">
+				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/libclogan.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clogan/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="filerw">
+				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/filerw" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 filerw"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="filerw/fast">
+				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/filerw" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 filerw/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib">
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedcrypto">
+				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/libmbedcrypto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 mbedcrypto"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedcrypto/fast">
+				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/libmbedcrypto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 mbedcrypto/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedx509">
+				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/libmbedx509.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 mbedx509"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedx509/fast">
+				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/libmbedx509.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 mbedx509/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedtls">
+				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/libmbedtls.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 mbedtls"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedtls/fast">
+				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/libmbedtls.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 mbedtls/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/aes_util.c">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/aes_util.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/base_util.c">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/base_util.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cJSON.c">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cJSON.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/clogan_core.c">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/clogan_core.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/clogan_status.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/console_util.c">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/console_util.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/construct_data.c">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/construct_data.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/directory_util.c">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/directory_util.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/json_util.c">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/json_util.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/logan_config.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/main.c">
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/aes.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/aesni.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/arc4.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/asn1parse.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/asn1write.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/base64.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/bignum.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/blowfish.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/camellia.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ccm.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/certs.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cipher.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cipher_wrap.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cmac.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ctr_drbg.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/debug.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/des.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/dhm.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecdh.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecdsa.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecjpake.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecp.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecp_curves.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/entropy.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/entropy_poll.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/error.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/gcm.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/havege.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/hmac_drbg.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md2.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md4.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md5.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md_wrap.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/memory_buffer_alloc.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/net_sockets.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/oid.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/padlock.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pem.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pk.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pk_wrap.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs11.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs12.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs5.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkparse.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkwrite.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/platform.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ripemd160.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/rsa.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha1.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha256.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha512.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cache.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_ciphersuites.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cli.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cookie.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_srv.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_ticket.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_tls.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/threading.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/timing.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/version.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/version_features.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_create.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_crl.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_crt.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_csr.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509write_crt.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509write_csr.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/xtea.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mmap_util.c">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mmap_util.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/zlib_util.c">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/zlib_util.h">
+			<Option target="clogan"/>
+			<Option target="filerw"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\mbedtls\library\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,7 @@
+[1/2] Building C object CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o
+FAILED: /Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dlogan_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC -MD -MT CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o -MF CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o.d -o CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o   -c /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c
+/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c:2:10: fatal error: 'clogan_protocol.h' file not found
+#include "clogan_protocol.h"
+         ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
