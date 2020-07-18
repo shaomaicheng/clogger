@@ -33,7 +33,8 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
+  # Include the install script for each subdirectory.
   include("/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/clogan.out/cmake_install.cmake")
+
 endif()
 

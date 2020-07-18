@@ -40,9 +40,7 @@
     "isDebuggableEnabled": true,
     "validAbiList": [
       "ARMEABI_V7A",
-      "ARM64_V8A",
-      "X86",
-      "X86_64"
+      "ARM64_V8A"
     ],
     "buildTargetSet": []
   },

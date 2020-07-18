@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o"
+  "CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o"
   "liblogan.dylib"
   "liblogan.pdb"
 )

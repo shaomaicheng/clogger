@@ -1,8 +1,10 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'package:clogger/clogger.dart';
 import 'package:clogger/native_test.dart';
 import 'package:clogger/transfer/strategy.dart';
+import 'package:clogger/clogan/logan.dart';
 
 void main() => runApp(MyApp());
 
@@ -89,6 +91,22 @@ class _MyAppState extends State<MyApp> {
 //                          .debug('native_call_test', result.toString());
                     },
                     title: 'native call test',
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  child: Button(
+                    () {
+                      String cacheDir = '/sdcard/chenglei/logancache';
+                      String pathDir = '/sdcard/chenglei/loganpath';
+                      Clogan.init(cacheDir, pathDir, 10, "chenglei", "leicheng");
+
+                      Clogan.open('/sdcard/chengleilogan.txt');
+                      Clogan.write(2, 'chenglei', DateTime.now().millisecondsSinceEpoch,
+                          'main', 1, true);
+                      Clogan.flush();
+                    },
+                    title: 'call logan write a log',
                   ),
                 ),
               ],

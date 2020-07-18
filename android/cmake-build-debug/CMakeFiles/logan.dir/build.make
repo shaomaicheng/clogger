@@ -57,27 +57,27 @@ include CMakeFiles/logan.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/logan.dir/flags.make
 
-CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o: CMakeFiles/logan.dir/flags.make
-CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o: /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o   -c /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c
+CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o: CMakeFiles/logan.dir/flags.make
+CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o: /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o   -c /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c
 
-CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c > CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.i
+CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c > CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.i
 
-CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c -o CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.s
+CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c -o CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.s
 
 # Object files for target logan
 logan_OBJECTS = \
-"CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o"
+"CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o"
 
 # External object files for target logan
 logan_EXTERNAL_OBJECTS =
 
-liblogan.dylib: CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o
+liblogan.dylib: CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o
 liblogan.dylib: CMakeFiles/logan.dir/build.make
 liblogan.dylib: /usr/bin/log
 liblogan.dylib: clogan.out/libclogan.a

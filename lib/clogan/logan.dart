@@ -19,7 +19,7 @@ typedef loganFlush = Void Function();
 
 class Clogan {
   static final DynamicLibrary nativeLogLib = Platform.isAndroid
-      ? DynamicLibrary.open("logan.so")
+      ? DynamicLibrary.open("liblogan.so")
       : DynamicLibrary.process();
 
   static void init(String cacheDir,String pathDir,int maxFile,

@@ -127,50 +127,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="filerw">
-				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/filerw" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 filerw"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="filerw/fast">
-				<Option output="/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/filerw" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 filerw/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="lib">
 				<Option working_dir="/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/clogan.out/clogan.out"/>
 				<Option type="4"/>
@@ -314,80 +270,62 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c">
+			<Option target="logan"/>
+		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/aes_util.c">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/aes_util.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/base_util.c">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/base_util.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cJSON.c">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cJSON.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/clogan_core.c">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/clogan_core.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/clogan_status.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/console_util.c">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/console_util.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/construct_data.c">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/construct_data.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/directory_util.c">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/directory_util.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/json_util.c">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/json_util.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/logan_config.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
-		</Unit>
-		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/main.c">
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/aes.c">
 			<Option target="mbedcrypto"/>
@@ -604,22 +542,15 @@
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mmap_util.c">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mmap_util.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/zlib_util.c">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/zlib_util.h">
 			<Option target="clogan"/>
-			<Option target="filerw"/>
-		</Unit>
-		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c">
-			<Option target="logan"/>
 		</Unit>
 		<Unit filename="/Users/chenglei/flutter_project/flutter_project/clogger/android/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

@@ -74,7 +74,6 @@ clean: clogan.out/clean
 
 # Recursive "all" directory target.
 clogan.out/all: clogan.out/CMakeFiles/clogan.dir/all
-clogan.out/all: clogan.out/CMakeFiles/filerw.dir/all
 clogan.out/all: clogan.out/clogan.out/all
 
 .PHONY : clogan.out/all
@@ -86,7 +85,6 @@ clogan.out/preinstall: clogan.out/clogan.out/preinstall
 
 # Recursive "clean" directory target.
 clogan.out/clean: clogan.out/CMakeFiles/clogan.dir/clean
-clogan.out/clean: clogan.out/CMakeFiles/filerw.dir/clean
 clogan.out/clean: clogan.out/clogan.out/clean
 
 .PHONY : clogan.out/clean
@@ -118,11 +116,11 @@ clogan.out/clogan.out/clean: clogan.out/clogan.out/CMakeFiles/mbedtls.dir/clean
 # Target rules for target CMakeFiles/logan.dir
 
 # All Build rule for target.
-CMakeFiles/logan.dir/all: clogan.out/CMakeFiles/clogan.dir/all
 CMakeFiles/logan.dir/all: clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/all
+CMakeFiles/logan.dir/all: clogan.out/CMakeFiles/clogan.dir/all
 	$(MAKE) -f CMakeFiles/logan.dir/build.make CMakeFiles/logan.dir/depend
 	$(MAKE) -f CMakeFiles/logan.dir/build.make CMakeFiles/logan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles --progress-num=24,25 "Built target logan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target logan"
 .PHONY : CMakeFiles/logan.dir/all
 
 # Build rule for subdir invocation for target.
@@ -170,33 +168,6 @@ clogan.out/CMakeFiles/clogan.dir/clean:
 .PHONY : clogan.out/CMakeFiles/clogan.dir/clean
 
 #=============================================================================
-# Target rules for target clogan.out/CMakeFiles/filerw.dir
-
-# All Build rule for target.
-clogan.out/CMakeFiles/filerw.dir/all:
-	$(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/depend
-	$(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23 "Built target filerw"
-.PHONY : clogan.out/CMakeFiles/filerw.dir/all
-
-# Build rule for subdir invocation for target.
-clogan.out/CMakeFiles/filerw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles 12
-	$(MAKE) -f CMakeFiles/Makefile2 clogan.out/CMakeFiles/filerw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles 0
-.PHONY : clogan.out/CMakeFiles/filerw.dir/rule
-
-# Convenience name for target.
-filerw: clogan.out/CMakeFiles/filerw.dir/rule
-
-.PHONY : filerw
-
-# clean rule for target.
-clogan.out/CMakeFiles/filerw.dir/clean:
-	$(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/clean
-.PHONY : clogan.out/CMakeFiles/filerw.dir/clean
-
-#=============================================================================
 # Target rules for target clogan.out/clogan.out/CMakeFiles/lib.dir
 
 # All Build rule for target.
@@ -232,7 +203,7 @@ clogan.out/clogan.out/CMakeFiles/lib.dir/clean:
 clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/all:
 	$(MAKE) -f clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/build.make clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/depend
 	$(MAKE) -f clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/build.make clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target mbedcrypto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Built target mbedcrypto"
 .PHONY : clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/all
 
 # Build rule for subdir invocation for target.
@@ -259,7 +230,7 @@ clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/clean:
 clogan.out/clogan.out/CMakeFiles/mbedx509.dir/all: clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f clogan.out/clogan.out/CMakeFiles/mbedx509.dir/build.make clogan.out/clogan.out/CMakeFiles/mbedx509.dir/depend
 	$(MAKE) -f clogan.out/clogan.out/CMakeFiles/mbedx509.dir/build.make clogan.out/clogan.out/CMakeFiles/mbedx509.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles --progress-num=90,91,92,93,94,95,96,97,98,99 "Built target mbedx509"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles --progress-num=78,79,80,81,82,83,84,85,86,87 "Built target mbedx509"
 .PHONY : clogan.out/clogan.out/CMakeFiles/mbedx509.dir/all
 
 # Build rule for subdir invocation for target.
@@ -287,7 +258,7 @@ clogan.out/clogan.out/CMakeFiles/mbedtls.dir/all: clogan.out/clogan.out/CMakeFil
 clogan.out/clogan.out/CMakeFiles/mbedtls.dir/all: clogan.out/clogan.out/CMakeFiles/mbedx509.dir/all
 	$(MAKE) -f clogan.out/clogan.out/CMakeFiles/mbedtls.dir/build.make clogan.out/clogan.out/CMakeFiles/mbedtls.dir/depend
 	$(MAKE) -f clogan.out/clogan.out/CMakeFiles/mbedtls.dir/build.make clogan.out/clogan.out/CMakeFiles/mbedtls.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles --progress-num=80,81,82,83,84,85,86,87,88,89 "Built target mbedtls"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles --progress-num=68,69,70,71,72,73,74,75,76,77 "Built target mbedtls"
 .PHONY : clogan.out/clogan.out/CMakeFiles/mbedtls.dir/all
 
 # Build rule for subdir invocation for target.

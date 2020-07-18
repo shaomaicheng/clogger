@@ -2,7 +2,9 @@
 {
 	"buildFiles" : 
 	[
-		"/Users/chenglei/flutter_project/flutter_project/clogger/android/CMakeLists.txt"
+		"/Users/chenglei/flutter_project/flutter_project/clogger/android/CMakeLists.txt",
+		"/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/CMakeLists.txt",
+		"/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/CMakeLists.txt"
 	],
 	"cFileExtensions" : [ "c" ],
 	"cleanCommands" : 
@@ -11,6 +13,78 @@
 	],
 	"libraries" : 
 	{
+		"clogan-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "clogan",
+			"buildCommand" : "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a --target clogan",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/clogan_core.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mmap_util.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cJSON.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/construct_data.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/zlib_util.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/json_util.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/aes_util.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/directory_util.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/base_util.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/console_util.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/libclogan.a",
+			"toolchain" : "570629348190329263"
+		},
 		"logan-Debug-armeabi-v7a" : 
 		{
 			"abi" : "armeabi-v7a",
@@ -21,12 +95,474 @@
 			[
 				
 				{
-					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dlogan_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC      -c ",
-					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c",
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dlogan_EXPORTS -I../../../../../ios/Classes/logan -I../../../../logg  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC      -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c",
 					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
 				}
 			],
 			"output" : "/Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/armeabi-v7a/liblogan.so",
+			"toolchain" : "570629348190329263"
+		},
+		"mbedcrypto-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "mbedcrypto",
+			"buildCommand" : "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a --target mbedcrypto",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/aes.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/aesni.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/arc4.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/asn1parse.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/asn1write.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/base64.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/bignum.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/blowfish.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/camellia.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ccm.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cipher.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cipher_wrap.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cmac.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ctr_drbg.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/des.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/dhm.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecdh.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecdsa.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecjpake.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecp.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecp_curves.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/entropy.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/entropy_poll.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/error.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/gcm.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/havege.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/hmac_drbg.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md2.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md4.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md5.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md_wrap.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/memory_buffer_alloc.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/oid.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/padlock.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pem.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pk.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pk_wrap.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs12.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs5.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkparse.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkwrite.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/platform.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ripemd160.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/rsa.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha1.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha256.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha512.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/threading.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/timing.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/version.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/version_features.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/xtea.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/libmbedcrypto.a",
+			"toolchain" : "570629348190329263"
+		},
+		"mbedtls-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "mbedtls",
+			"buildCommand" : "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a --target mbedtls",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/debug.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/net_sockets.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cache.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_ciphersuites.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cli.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cookie.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_srv.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_ticket.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_tls.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/libmbedtls.a",
+			"toolchain" : "570629348190329263"
+		},
+		"mbedx509-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "mbedx509",
+			"buildCommand" : "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a --target mbedx509",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/certs.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs11.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_create.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_crl.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_crt.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_csr.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509write_crt.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11    -c ",
+					"src" : "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509write_csr.c",
+					"workingDirectory" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/libmbedx509.a",
 			"toolchain" : "570629348190329263"
 		}
 	},

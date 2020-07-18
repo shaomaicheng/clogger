@@ -245,6 +245,9 @@ cl_BINARY_DIR:STATIC=/Users/chenglei/flutter_project/flutter_project/clogger/and
 //Value Computed by CMake
 cl_SOURCE_DIR:STATIC=/Users/chenglei/flutter_project/flutter_project/clogger/android
 
+//Dependencies for the target
+clogan_LIB_DEPENDS:STATIC=general;mbedcrypto;general;z;
+
 //Value Computed by CMake
 clogger_BINARY_DIR:STATIC=/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug
 
@@ -259,6 +262,15 @@ filerw_SOURCE_DIR:STATIC=/Users/chenglei/flutter_project/flutter_project/clogger
 
 //Path to a library.
 log-lib:FILEPATH=/usr/bin/log
+
+//Dependencies for the target
+logan_LIB_DEPENDS:STATIC=general;/usr/bin/log;general;z;general;clogan;
+
+//Dependencies for the target
+mbedtls_LIB_DEPENDS:STATIC=general;mbedx509;
+
+//Dependencies for the target
+mbedx509_LIB_DEPENDS:STATIC=general;mbedcrypto;
 
 
 ########################

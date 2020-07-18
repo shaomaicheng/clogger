@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Project
+# Project: clogger
 # Configuration: Debug
 # =============================================================================
 
@@ -51,10 +51,16 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Object build statements for SHARED_LIBRARY target logan
 
-build CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o: C_COMPILER__logan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c
+
+#############################################
+# Order-only phony target for logan
+
+build cmake_order_depends_target_logan: phony || clogan.out/clogan.out/libmbedcrypto.a clogan.out/libclogan.a
+build CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o: C_COMPILER__logan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c || cmake_order_depends_target_logan
   DEFINES = -Dlogan_EXPORTS
   DEP_FILE = CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC
+  INCLUDES = -I../../../../../ios/Classes/logan -I../../../../logg
   IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c
   OBJECT_DIR = CMakeFiles/logan.dir
   OBJECT_FILE_DIR = CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes
@@ -66,10 +72,10 @@ build CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogge
 #############################################
 # Link the shared library /Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/x86/liblogan.so
 
-build /Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/x86/liblogan.so: C_SHARED_LIBRARY_LINKER__logan CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o | /Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/16/liblog.so
+build /Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/x86/liblogan.so: C_SHARED_LIBRARY_LINKER__logan CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o | /Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/16/liblog.so clogan.out/libclogan.a clogan.out/clogan.out/libmbedcrypto.a || clogan.out/clogan.out/libmbedcrypto.a clogan.out/libclogan.a
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack
-  LINK_LIBRARIES = -llog -lz -lclogan -latomic -lm
+  LINK_LIBRARIES = -llog -lz clogan.out/libclogan.a clogan.out/clogan.out/libmbedcrypto.a -latomic -lm
   OBJECT_DIR = CMakeFiles/logan.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -78,14 +84,807 @@ build /Users/chenglei/flutter_project/flutter_project/clogger/example/build/clog
   TARGET_FILE = /Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/x86/liblogan.so
   TARGET_PDB = logan.so.dbg
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/chenglei/flutter_project/flutter_project/clogger/android/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target clogan
+
+
+#############################################
+# Order-only phony target for clogan
+
+build cmake_order_depends_target_clogan: phony || clogan.out/clogan.out/libmbedcrypto.a
+build clogan.out/CMakeFiles/clogan.dir/clogan_core.c.o: C_COMPILER__clogan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/clogan_core.c || cmake_order_depends_target_clogan
+  DEP_FILE = clogan.out/CMakeFiles/clogan.dir/clogan_core.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/clogan_core.c
+  OBJECT_DIR = clogan.out/CMakeFiles/clogan.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/clogan.dir
+build clogan.out/CMakeFiles/clogan.dir/mmap_util.c.o: C_COMPILER__clogan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mmap_util.c || cmake_order_depends_target_clogan
+  DEP_FILE = clogan.out/CMakeFiles/clogan.dir/mmap_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mmap_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/clogan.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/clogan.dir
+build clogan.out/CMakeFiles/clogan.dir/cJSON.c.o: C_COMPILER__clogan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cJSON.c || cmake_order_depends_target_clogan
+  DEP_FILE = clogan.out/CMakeFiles/clogan.dir/cJSON.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cJSON.c
+  OBJECT_DIR = clogan.out/CMakeFiles/clogan.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/clogan.dir
+build clogan.out/CMakeFiles/clogan.dir/construct_data.c.o: C_COMPILER__clogan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/construct_data.c || cmake_order_depends_target_clogan
+  DEP_FILE = clogan.out/CMakeFiles/clogan.dir/construct_data.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/construct_data.c
+  OBJECT_DIR = clogan.out/CMakeFiles/clogan.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/clogan.dir
+build clogan.out/CMakeFiles/clogan.dir/zlib_util.c.o: C_COMPILER__clogan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/zlib_util.c || cmake_order_depends_target_clogan
+  DEP_FILE = clogan.out/CMakeFiles/clogan.dir/zlib_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/zlib_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/clogan.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/clogan.dir
+build clogan.out/CMakeFiles/clogan.dir/json_util.c.o: C_COMPILER__clogan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/json_util.c || cmake_order_depends_target_clogan
+  DEP_FILE = clogan.out/CMakeFiles/clogan.dir/json_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/json_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/clogan.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/clogan.dir
+build clogan.out/CMakeFiles/clogan.dir/aes_util.c.o: C_COMPILER__clogan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/aes_util.c || cmake_order_depends_target_clogan
+  DEP_FILE = clogan.out/CMakeFiles/clogan.dir/aes_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/aes_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/clogan.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/clogan.dir
+build clogan.out/CMakeFiles/clogan.dir/directory_util.c.o: C_COMPILER__clogan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/directory_util.c || cmake_order_depends_target_clogan
+  DEP_FILE = clogan.out/CMakeFiles/clogan.dir/directory_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/directory_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/clogan.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/clogan.dir
+build clogan.out/CMakeFiles/clogan.dir/base_util.c.o: C_COMPILER__clogan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/base_util.c || cmake_order_depends_target_clogan
+  DEP_FILE = clogan.out/CMakeFiles/clogan.dir/base_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/base_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/clogan.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/clogan.dir
+build clogan.out/CMakeFiles/clogan.dir/console_util.c.o: C_COMPILER__clogan /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/console_util.c || cmake_order_depends_target_clogan
+  DEP_FILE = clogan.out/CMakeFiles/clogan.dir/console_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/console_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/clogan.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/clogan.dir
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target clogan
+
+
+#############################################
+# Link the static library clogan.out/libclogan.a
+
+build clogan.out/libclogan.a: C_STATIC_LIBRARY_LINKER__clogan clogan.out/CMakeFiles/clogan.dir/clogan_core.c.o clogan.out/CMakeFiles/clogan.dir/mmap_util.c.o clogan.out/CMakeFiles/clogan.dir/cJSON.c.o clogan.out/CMakeFiles/clogan.dir/construct_data.c.o clogan.out/CMakeFiles/clogan.dir/zlib_util.c.o clogan.out/CMakeFiles/clogan.dir/json_util.c.o clogan.out/CMakeFiles/clogan.dir/aes_util.c.o clogan.out/CMakeFiles/clogan.dir/directory_util.c.o clogan.out/CMakeFiles/clogan.dir/base_util.c.o clogan.out/CMakeFiles/clogan.dir/console_util.c.o || clogan.out/clogan.out/libmbedcrypto.a
+  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g
+  OBJECT_DIR = clogan.out/CMakeFiles/clogan.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = clogan.out/libclogan.a
+  TARGET_PDB = clogan.a.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target filerw
+
+build clogan.out/CMakeFiles/filerw.dir/main.c.o: C_COMPILER__filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/main.c
+  DEP_FILE = clogan.out/CMakeFiles/filerw.dir/main.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIE   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/main.c
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/filerw.dir
+build clogan.out/CMakeFiles/filerw.dir/clogan_core.c.o: C_COMPILER__filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/clogan_core.c
+  DEP_FILE = clogan.out/CMakeFiles/filerw.dir/clogan_core.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIE   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/clogan_core.c
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/filerw.dir
+build clogan.out/CMakeFiles/filerw.dir/mmap_util.c.o: C_COMPILER__filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mmap_util.c
+  DEP_FILE = clogan.out/CMakeFiles/filerw.dir/mmap_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIE   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mmap_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/filerw.dir
+build clogan.out/CMakeFiles/filerw.dir/cJSON.c.o: C_COMPILER__filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cJSON.c
+  DEP_FILE = clogan.out/CMakeFiles/filerw.dir/cJSON.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIE   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/cJSON.c
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/filerw.dir
+build clogan.out/CMakeFiles/filerw.dir/construct_data.c.o: C_COMPILER__filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/construct_data.c
+  DEP_FILE = clogan.out/CMakeFiles/filerw.dir/construct_data.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIE   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/construct_data.c
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/filerw.dir
+build clogan.out/CMakeFiles/filerw.dir/zlib_util.c.o: C_COMPILER__filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/zlib_util.c
+  DEP_FILE = clogan.out/CMakeFiles/filerw.dir/zlib_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIE   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/zlib_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/filerw.dir
+build clogan.out/CMakeFiles/filerw.dir/json_util.c.o: C_COMPILER__filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/json_util.c
+  DEP_FILE = clogan.out/CMakeFiles/filerw.dir/json_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIE   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/json_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/filerw.dir
+build clogan.out/CMakeFiles/filerw.dir/aes_util.c.o: C_COMPILER__filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/aes_util.c
+  DEP_FILE = clogan.out/CMakeFiles/filerw.dir/aes_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIE   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/aes_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/filerw.dir
+build clogan.out/CMakeFiles/filerw.dir/directory_util.c.o: C_COMPILER__filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/directory_util.c
+  DEP_FILE = clogan.out/CMakeFiles/filerw.dir/directory_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIE   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/directory_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/filerw.dir
+build clogan.out/CMakeFiles/filerw.dir/base_util.c.o: C_COMPILER__filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/base_util.c
+  DEP_FILE = clogan.out/CMakeFiles/filerw.dir/base_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIE   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/base_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/filerw.dir
+build clogan.out/CMakeFiles/filerw.dir/console_util.c.o: C_COMPILER__filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/console_util.c
+  DEP_FILE = clogan.out/CMakeFiles/filerw.dir/console_util.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIE   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/console_util.c
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  OBJECT_FILE_DIR = clogan.out/CMakeFiles/filerw.dir
+
+# =============================================================================
+# Link build statements for EXECUTABLE target filerw
+
+
+#############################################
+# Link the executable clogan.out/filerw
+
+build clogan.out/filerw: C_EXECUTABLE_LINKER__filerw clogan.out/CMakeFiles/filerw.dir/main.c.o clogan.out/CMakeFiles/filerw.dir/clogan_core.c.o clogan.out/CMakeFiles/filerw.dir/mmap_util.c.o clogan.out/CMakeFiles/filerw.dir/cJSON.c.o clogan.out/CMakeFiles/filerw.dir/construct_data.c.o clogan.out/CMakeFiles/filerw.dir/zlib_util.c.o clogan.out/CMakeFiles/filerw.dir/json_util.c.o clogan.out/CMakeFiles/filerw.dir/aes_util.c.o clogan.out/CMakeFiles/filerw.dir/directory_util.c.o clogan.out/CMakeFiles/filerw.dir/base_util.c.o clogan.out/CMakeFiles/filerw.dir/console_util.c.o
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections
+  LINK_LIBRARIES = -latomic -lm
+  OBJECT_DIR = clogan.out/CMakeFiles/filerw.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = clogan.out/filerw
+  TARGET_PDB = filerw.dbg
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for lib
+
+build clogan.out/clogan.out/lib: phony clogan.out/clogan.out/CMakeFiles/lib clogan.out/clogan.out/libmbedcrypto.a clogan.out/clogan.out/libmbedtls.a clogan.out/clogan.out/libmbedx509.a
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target mbedcrypto
+
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/aes.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/aes.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/aes.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/aes.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/aesni.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/aesni.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/aesni.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/aesni.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/arc4.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/arc4.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/arc4.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/arc4.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/asn1parse.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/asn1parse.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/asn1parse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/asn1parse.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/asn1write.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/asn1write.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/asn1write.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/asn1write.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/base64.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/base64.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/base64.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/base64.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/bignum.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/bignum.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/bignum.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/bignum.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/blowfish.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/blowfish.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/blowfish.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/blowfish.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/camellia.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/camellia.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/camellia.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/camellia.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ccm.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ccm.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ccm.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ccm.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/cipher.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cipher.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/cipher.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cipher.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/cipher_wrap.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cipher_wrap.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/cipher_wrap.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cipher_wrap.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/cmac.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cmac.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/cmac.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/cmac.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ctr_drbg.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ctr_drbg.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/des.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/des.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/des.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/des.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/dhm.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/dhm.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/dhm.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/dhm.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecdh.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecdh.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecdh.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecdh.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecdsa.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecdsa.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecdsa.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecdsa.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecjpake.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecjpake.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecjpake.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecjpake.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecp.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecp.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecp.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecp.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecp_curves.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecp_curves.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecp_curves.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ecp_curves.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/entropy.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/entropy.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/entropy.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/entropy.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/entropy_poll.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/entropy_poll.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/entropy_poll.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/entropy_poll.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/error.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/error.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/error.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/error.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/gcm.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/gcm.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/gcm.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/gcm.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/havege.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/havege.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/havege.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/havege.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/hmac_drbg.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/hmac_drbg.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md2.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md2.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md2.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md2.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md4.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md4.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md4.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md4.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md5.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md5.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md5.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md5.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md_wrap.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md_wrap.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md_wrap.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/md_wrap.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/memory_buffer_alloc.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/memory_buffer_alloc.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/oid.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/oid.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/oid.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/oid.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/padlock.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/padlock.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/padlock.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/padlock.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pem.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pem.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pem.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pem.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pk.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pk.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pk.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pk.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pk_wrap.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pk_wrap.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pk_wrap.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pk_wrap.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkcs12.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs12.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkcs12.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs12.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkcs5.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs5.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkcs5.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs5.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkparse.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkparse.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkparse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkparse.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkwrite.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkwrite.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkwrite.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkwrite.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/platform.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/platform.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/platform.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/platform.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ripemd160.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ripemd160.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ripemd160.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ripemd160.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/rsa.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/rsa.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/rsa.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/rsa.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/sha1.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha1.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/sha1.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha1.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/sha256.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha256.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/sha256.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha256.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/sha512.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha512.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/sha512.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/sha512.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/threading.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/threading.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/threading.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/threading.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/timing.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/timing.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/timing.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/timing.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/version.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/version.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/version.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/version.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/version_features.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/version_features.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/version_features.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/version_features.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+build clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/xtea.c.o: C_COMPILER__mbedcrypto /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/xtea.c
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/xtea.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/xtea.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target mbedcrypto
+
+
+#############################################
+# Link the static library clogan.out/clogan.out/libmbedcrypto.a
+
+build clogan.out/clogan.out/libmbedcrypto.a: C_STATIC_LIBRARY_LINKER__mbedcrypto clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/aes.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/aesni.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/arc4.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/asn1parse.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/asn1write.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/base64.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/bignum.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/blowfish.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/camellia.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ccm.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/cipher.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/cipher_wrap.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/cmac.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/des.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/dhm.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecdh.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecdsa.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecjpake.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecp.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ecp_curves.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/entropy.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/entropy_poll.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/error.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/gcm.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/havege.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md2.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md4.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md5.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/md_wrap.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/oid.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/padlock.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pem.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pk.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pk_wrap.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkcs12.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkcs5.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkparse.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/pkwrite.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/platform.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/ripemd160.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/rsa.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/sha1.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/sha256.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/sha512.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/threading.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/timing.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/version.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/version_features.c.o clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir/xtea.c.o
+  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = clogan.out/clogan.out/libmbedcrypto.a
+  TARGET_PDB = mbedcrypto.a.dbg
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target mbedx509
+
+
+#############################################
+# Order-only phony target for mbedx509
+
+build cmake_order_depends_target_mbedx509: phony || clogan.out/clogan.out/libmbedcrypto.a
+build clogan.out/clogan.out/CMakeFiles/mbedx509.dir/certs.c.o: C_COMPILER__mbedx509 /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/certs.c || cmake_order_depends_target_mbedx509
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedx509.dir/certs.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/certs.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+build clogan.out/clogan.out/CMakeFiles/mbedx509.dir/pkcs11.c.o: C_COMPILER__mbedx509 /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs11.c || cmake_order_depends_target_mbedx509
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedx509.dir/pkcs11.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/pkcs11.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+build clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509.c.o: C_COMPILER__mbedx509 /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509.c || cmake_order_depends_target_mbedx509
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+build clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_create.c.o: C_COMPILER__mbedx509 /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_create.c || cmake_order_depends_target_mbedx509
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_create.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_create.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+build clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_crl.c.o: C_COMPILER__mbedx509 /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_crl.c || cmake_order_depends_target_mbedx509
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_crl.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_crl.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+build clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_crt.c.o: C_COMPILER__mbedx509 /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_crt.c || cmake_order_depends_target_mbedx509
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_crt.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_crt.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+build clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_csr.c.o: C_COMPILER__mbedx509 /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_csr.c || cmake_order_depends_target_mbedx509
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_csr.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509_csr.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+build clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509write_crt.c.o: C_COMPILER__mbedx509 /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509write_crt.c || cmake_order_depends_target_mbedx509
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509write_crt.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509write_crt.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+build clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509write_csr.c.o: C_COMPILER__mbedx509 /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509write_csr.c || cmake_order_depends_target_mbedx509
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509write_csr.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/x509write_csr.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target mbedx509
+
+
+#############################################
+# Link the static library clogan.out/clogan.out/libmbedx509.a
+
+build clogan.out/clogan.out/libmbedx509.a: C_STATIC_LIBRARY_LINKER__mbedx509 clogan.out/clogan.out/CMakeFiles/mbedx509.dir/certs.c.o clogan.out/clogan.out/CMakeFiles/mbedx509.dir/pkcs11.c.o clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509.c.o clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_create.c.o clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_crl.c.o clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_crt.c.o clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509_csr.c.o clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509write_crt.c.o clogan.out/clogan.out/CMakeFiles/mbedx509.dir/x509write_csr.c.o || clogan.out/clogan.out/libmbedcrypto.a
+  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = clogan.out/clogan.out/libmbedx509.a
+  TARGET_PDB = mbedx509.a.dbg
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target mbedtls
+
+
+#############################################
+# Order-only phony target for mbedtls
+
+build cmake_order_depends_target_mbedtls: phony || clogan.out/clogan.out/libmbedcrypto.a clogan.out/clogan.out/libmbedx509.a
+build clogan.out/clogan.out/CMakeFiles/mbedtls.dir/debug.c.o: C_COMPILER__mbedtls /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/debug.c || cmake_order_depends_target_mbedtls
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedtls.dir/debug.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/debug.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+build clogan.out/clogan.out/CMakeFiles/mbedtls.dir/net_sockets.c.o: C_COMPILER__mbedtls /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/net_sockets.c || cmake_order_depends_target_mbedtls
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedtls.dir/net_sockets.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/net_sockets.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+build clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_cache.c.o: C_COMPILER__mbedtls /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cache.c || cmake_order_depends_target_mbedtls
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_cache.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cache.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+build clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.o: C_COMPILER__mbedtls /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_ciphersuites.c || cmake_order_depends_target_mbedtls
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_ciphersuites.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+build clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_cli.c.o: C_COMPILER__mbedtls /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cli.c || cmake_order_depends_target_mbedtls
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_cli.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cli.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+build clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_cookie.c.o: C_COMPILER__mbedtls /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cookie.c || cmake_order_depends_target_mbedtls
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_cookie.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_cookie.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+build clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_srv.c.o: C_COMPILER__mbedtls /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_srv.c || cmake_order_depends_target_mbedtls
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_srv.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_srv.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+build clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_ticket.c.o: C_COMPILER__mbedtls /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_ticket.c || cmake_order_depends_target_mbedtls
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_ticket.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_ticket.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+build clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_tls.c.o: C_COMPILER__mbedtls /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_tls.c || cmake_order_depends_target_mbedtls
+  DEP_FILE = clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_tls.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g -fPIC   -std=gnu11
+  INCLUDES = -I/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/./mbedtls/include
+  IN_ABS = /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/ssl_tls.c
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+  OBJECT_FILE_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target mbedtls
+
+
+#############################################
+# Link the static library clogan.out/clogan.out/libmbedtls.a
+
+build clogan.out/clogan.out/libmbedtls.a: C_STATIC_LIBRARY_LINKER__mbedtls clogan.out/clogan.out/CMakeFiles/mbedtls.dir/debug.c.o clogan.out/clogan.out/CMakeFiles/mbedtls.dir/net_sockets.c.o clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_cache.c.o clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.o clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_cli.c.o clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_cookie.c.o clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_srv.c.o clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_ticket.c.o clogan.out/clogan.out/CMakeFiles/mbedtls.dir/ssl_tls.c.o || clogan.out/clogan.out/libmbedcrypto.a clogan.out/clogan.out/libmbedx509.a
+  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -g
+  OBJECT_DIR = clogan.out/clogan.out/CMakeFiles/mbedtls.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = clogan.out/clogan.out/libmbedtls.a
+  TARGET_PDB = mbedtls.a.dbg
+
+#############################################
+# Phony custom command for clogan.out/clogan.out/CMakeFiles/lib
+
+build clogan.out/clogan.out/CMakeFiles/lib: phony clogan.out/clogan.out/libmbedcrypto.a clogan.out/clogan.out/libmbedx509.a clogan.out/clogan.out/libmbedtls.a || clogan.out/clogan.out/libmbedcrypto.a clogan.out/clogan.out/libmbedtls.a clogan.out/clogan.out/libmbedx509.a
+# =============================================================================
 # Target aliases.
 
+build clogan: phony clogan.out/libclogan.a
+build filerw: phony clogan.out/filerw
+build lib: phony clogan.out/clogan.out/lib
+build libclogan.a: phony clogan.out/libclogan.a
 build liblogan.so: phony /Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/x86/liblogan.so
+build libmbedcrypto.a: phony clogan.out/clogan.out/libmbedcrypto.a
+build libmbedtls.a: phony clogan.out/clogan.out/libmbedtls.a
+build libmbedx509.a: phony clogan.out/clogan.out/libmbedx509.a
 build logan: phony /Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/x86/liblogan.so
+build mbedcrypto: phony clogan.out/clogan.out/libmbedcrypto.a
+build mbedtls: phony clogan.out/clogan.out/libmbedtls.a
+build mbedx509: phony clogan.out/clogan.out/libmbedx509.a
 # =============================================================================
 # Folder targets.
 
 # =============================================================================
+# =============================================================================
+
+#############################################
+# Folder: /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan
+
+build  /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/all: phony clogan filerw /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/all
+# =============================================================================
+
+#############################################
+# Folder: /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library
+
+build  /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/all: phony mbedcrypto mbedx509 mbedtls
 # =============================================================================
 # Built-in targets
 
@@ -93,7 +892,7 @@ build logan: phony /Users/chenglei/flutter_project/flutter_project/clogger/examp
 #############################################
 # The main all target.
 
-build all: phony /Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/x86/liblogan.so
+build all: phony /Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/x86/liblogan.so clogan.out/libclogan.a clogan.out/filerw clogan.out/clogan.out/libmbedcrypto.a clogan.out/clogan.out/libmbedx509.a clogan.out/clogan.out/libmbedtls.a
 
 #############################################
 # Make the all target the default.
@@ -103,13 +902,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../../../../CMakeLists.txt /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake /Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake /Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../../../../CMakeLists.txt /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake /Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake /Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/build/cmake/platforms.cmake /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/CMakeLists.txt /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/CMakeLists.txt CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../../../../CMakeLists.txt /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake /Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake /Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake: phony
+build ../../../../CMakeLists.txt /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake /Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake /Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake /Users/chenglei/Library/Android/sdk/ndk/20.0.5594570/build/cmake/platforms.cmake /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/CMakeLists.txt /Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/CMakeLists.txt CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake: phony
 
 #############################################
 # Clean all the built files.

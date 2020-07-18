@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c" "/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o"
+  "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c" "/Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug/CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

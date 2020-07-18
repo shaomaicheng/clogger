@@ -1,3 +1,12 @@
 /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
 /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
 /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/logan.dir
+/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/CMakeFiles/edit_cache.dir
+/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/CMakeFiles/rebuild_cache.dir
+/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/CMakeFiles/clogan.dir
+/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/CMakeFiles/edit_cache.dir
+/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/CMakeFiles/lib.dir
+/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/CMakeFiles/mbedcrypto.dir
+/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/CMakeFiles/mbedx509.dir
+/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/CMakeFiles/rebuild_cache.dir
+/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/CMakeFiles/mbedtls.dir

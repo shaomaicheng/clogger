@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.6.0-rc2)
 project(clogger)
 
 add_library( logan
@@ -7,7 +7,7 @@ add_library( logan
              SHARED
 
              # Provides a relative path to your source file(s).
-        ../ios/Classes/native_add.c)
+        ../ios/Classes/cloger_logan.c)
 
 SET (CMAKE_C_FLAGS_DEBUG          "-g")
 SET (CMAKE_C_FLAGS_RELEASE        "-O2 -DNDEBUG")

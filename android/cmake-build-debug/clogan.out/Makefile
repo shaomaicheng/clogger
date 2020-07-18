@@ -125,21 +125,6 @@ clogan/fast:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/build
 .PHONY : clogan/fast
 
-# Convenience name for target.
-clogan.out/CMakeFiles/filerw.dir/rule:
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 clogan.out/CMakeFiles/filerw.dir/rule
-.PHONY : clogan.out/CMakeFiles/filerw.dir/rule
-
-# Convenience name for target.
-filerw: clogan.out/CMakeFiles/filerw.dir/rule
-
-.PHONY : filerw
-
-# fast build rule for target.
-filerw/fast:
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/build
-.PHONY : filerw/fast
-
 aes_util.o: aes_util.c.o
 
 .PHONY : aes_util.o
@@ -147,7 +132,6 @@ aes_util.o: aes_util.c.o
 # target to build an object file
 aes_util.c.o:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/aes_util.c.o
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/aes_util.c.o
 .PHONY : aes_util.c.o
 
 aes_util.i: aes_util.c.i
@@ -157,7 +141,6 @@ aes_util.i: aes_util.c.i
 # target to preprocess a source file
 aes_util.c.i:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/aes_util.c.i
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/aes_util.c.i
 .PHONY : aes_util.c.i
 
 aes_util.s: aes_util.c.s
@@ -167,7 +150,6 @@ aes_util.s: aes_util.c.s
 # target to generate assembly for a file
 aes_util.c.s:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/aes_util.c.s
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/aes_util.c.s
 .PHONY : aes_util.c.s
 
 base_util.o: base_util.c.o
@@ -177,7 +159,6 @@ base_util.o: base_util.c.o
 # target to build an object file
 base_util.c.o:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/base_util.c.o
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/base_util.c.o
 .PHONY : base_util.c.o
 
 base_util.i: base_util.c.i
@@ -187,7 +168,6 @@ base_util.i: base_util.c.i
 # target to preprocess a source file
 base_util.c.i:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/base_util.c.i
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/base_util.c.i
 .PHONY : base_util.c.i
 
 base_util.s: base_util.c.s
@@ -197,7 +177,6 @@ base_util.s: base_util.c.s
 # target to generate assembly for a file
 base_util.c.s:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/base_util.c.s
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/base_util.c.s
 .PHONY : base_util.c.s
 
 cJSON.o: cJSON.c.o
@@ -207,7 +186,6 @@ cJSON.o: cJSON.c.o
 # target to build an object file
 cJSON.c.o:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/cJSON.c.o
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/cJSON.c.o
 .PHONY : cJSON.c.o
 
 cJSON.i: cJSON.c.i
@@ -217,7 +195,6 @@ cJSON.i: cJSON.c.i
 # target to preprocess a source file
 cJSON.c.i:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/cJSON.c.i
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/cJSON.c.i
 .PHONY : cJSON.c.i
 
 cJSON.s: cJSON.c.s
@@ -227,7 +204,6 @@ cJSON.s: cJSON.c.s
 # target to generate assembly for a file
 cJSON.c.s:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/cJSON.c.s
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/cJSON.c.s
 .PHONY : cJSON.c.s
 
 clogan_core.o: clogan_core.c.o
@@ -237,7 +213,6 @@ clogan_core.o: clogan_core.c.o
 # target to build an object file
 clogan_core.c.o:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/clogan_core.c.o
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/clogan_core.c.o
 .PHONY : clogan_core.c.o
 
 clogan_core.i: clogan_core.c.i
@@ -247,7 +222,6 @@ clogan_core.i: clogan_core.c.i
 # target to preprocess a source file
 clogan_core.c.i:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/clogan_core.c.i
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/clogan_core.c.i
 .PHONY : clogan_core.c.i
 
 clogan_core.s: clogan_core.c.s
@@ -257,7 +231,6 @@ clogan_core.s: clogan_core.c.s
 # target to generate assembly for a file
 clogan_core.c.s:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/clogan_core.c.s
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/clogan_core.c.s
 .PHONY : clogan_core.c.s
 
 console_util.o: console_util.c.o
@@ -267,7 +240,6 @@ console_util.o: console_util.c.o
 # target to build an object file
 console_util.c.o:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/console_util.c.o
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/console_util.c.o
 .PHONY : console_util.c.o
 
 console_util.i: console_util.c.i
@@ -277,7 +249,6 @@ console_util.i: console_util.c.i
 # target to preprocess a source file
 console_util.c.i:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/console_util.c.i
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/console_util.c.i
 .PHONY : console_util.c.i
 
 console_util.s: console_util.c.s
@@ -287,7 +258,6 @@ console_util.s: console_util.c.s
 # target to generate assembly for a file
 console_util.c.s:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/console_util.c.s
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/console_util.c.s
 .PHONY : console_util.c.s
 
 construct_data.o: construct_data.c.o
@@ -297,7 +267,6 @@ construct_data.o: construct_data.c.o
 # target to build an object file
 construct_data.c.o:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/construct_data.c.o
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/construct_data.c.o
 .PHONY : construct_data.c.o
 
 construct_data.i: construct_data.c.i
@@ -307,7 +276,6 @@ construct_data.i: construct_data.c.i
 # target to preprocess a source file
 construct_data.c.i:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/construct_data.c.i
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/construct_data.c.i
 .PHONY : construct_data.c.i
 
 construct_data.s: construct_data.c.s
@@ -317,7 +285,6 @@ construct_data.s: construct_data.c.s
 # target to generate assembly for a file
 construct_data.c.s:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/construct_data.c.s
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/construct_data.c.s
 .PHONY : construct_data.c.s
 
 directory_util.o: directory_util.c.o
@@ -327,7 +294,6 @@ directory_util.o: directory_util.c.o
 # target to build an object file
 directory_util.c.o:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/directory_util.c.o
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/directory_util.c.o
 .PHONY : directory_util.c.o
 
 directory_util.i: directory_util.c.i
@@ -337,7 +303,6 @@ directory_util.i: directory_util.c.i
 # target to preprocess a source file
 directory_util.c.i:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/directory_util.c.i
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/directory_util.c.i
 .PHONY : directory_util.c.i
 
 directory_util.s: directory_util.c.s
@@ -347,7 +312,6 @@ directory_util.s: directory_util.c.s
 # target to generate assembly for a file
 directory_util.c.s:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/directory_util.c.s
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/directory_util.c.s
 .PHONY : directory_util.c.s
 
 json_util.o: json_util.c.o
@@ -357,7 +321,6 @@ json_util.o: json_util.c.o
 # target to build an object file
 json_util.c.o:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/json_util.c.o
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/json_util.c.o
 .PHONY : json_util.c.o
 
 json_util.i: json_util.c.i
@@ -367,7 +330,6 @@ json_util.i: json_util.c.i
 # target to preprocess a source file
 json_util.c.i:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/json_util.c.i
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/json_util.c.i
 .PHONY : json_util.c.i
 
 json_util.s: json_util.c.s
@@ -377,35 +339,7 @@ json_util.s: json_util.c.s
 # target to generate assembly for a file
 json_util.c.s:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/json_util.c.s
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/json_util.c.s
 .PHONY : json_util.c.s
-
-main.o: main.c.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/main.c.s
-.PHONY : main.c.s
 
 mmap_util.o: mmap_util.c.o
 
@@ -414,7 +348,6 @@ mmap_util.o: mmap_util.c.o
 # target to build an object file
 mmap_util.c.o:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/mmap_util.c.o
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/mmap_util.c.o
 .PHONY : mmap_util.c.o
 
 mmap_util.i: mmap_util.c.i
@@ -424,7 +357,6 @@ mmap_util.i: mmap_util.c.i
 # target to preprocess a source file
 mmap_util.c.i:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/mmap_util.c.i
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/mmap_util.c.i
 .PHONY : mmap_util.c.i
 
 mmap_util.s: mmap_util.c.s
@@ -434,7 +366,6 @@ mmap_util.s: mmap_util.c.s
 # target to generate assembly for a file
 mmap_util.c.s:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/mmap_util.c.s
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/mmap_util.c.s
 .PHONY : mmap_util.c.s
 
 zlib_util.o: zlib_util.c.o
@@ -444,7 +375,6 @@ zlib_util.o: zlib_util.c.o
 # target to build an object file
 zlib_util.c.o:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/zlib_util.c.o
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/zlib_util.c.o
 .PHONY : zlib_util.c.o
 
 zlib_util.i: zlib_util.c.i
@@ -454,7 +384,6 @@ zlib_util.i: zlib_util.c.i
 # target to preprocess a source file
 zlib_util.c.i:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/zlib_util.c.i
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/zlib_util.c.i
 .PHONY : zlib_util.c.i
 
 zlib_util.s: zlib_util.c.s
@@ -464,7 +393,6 @@ zlib_util.s: zlib_util.c.s
 # target to generate assembly for a file
 zlib_util.c.s:
 	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/clogan.dir/build.make clogan.out/CMakeFiles/clogan.dir/zlib_util.c.s
-	cd /Users/chenglei/flutter_project/flutter_project/clogger/android/cmake-build-debug && $(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/zlib_util.c.s
 .PHONY : zlib_util.c.s
 
 # Help Target
@@ -476,7 +404,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... clogan"
-	@echo "... filerw"
 	@echo "... aes_util.o"
 	@echo "... aes_util.i"
 	@echo "... aes_util.s"
@@ -501,9 +428,6 @@ help:
 	@echo "... json_util.o"
 	@echo "... json_util.i"
 	@echo "... json_util.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... mmap_util.o"
 	@echo "... mmap_util.i"
 	@echo "... mmap_util.s"

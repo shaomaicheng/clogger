@@ -1,0 +1,4 @@
+[1/1] Re-running CMake...
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a

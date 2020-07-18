@@ -1,16 +1,42 @@
 {
   "buildFiles": [
-    "/Users/chenglei/flutter_project/flutter_project/clogger/android/CMakeLists.txt"
+    "/Users/chenglei/flutter_project/flutter_project/clogger/android/CMakeLists.txt",
+    "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/CMakeLists.txt",
+    "/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/logan/mbedtls/library/CMakeLists.txt"
   ],
   "cleanCommands": [
     "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a --target clean"
   ],
   "libraries": {
+    "mbedtls-Debug-armeabi-v7a": {
+      "artifactName": "mbedtls",
+      "buildCommand": "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a --target mbedtls",
+      "abi": "armeabi-v7a",
+      "output": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/libmbedtls.a"
+    },
+    "mbedcrypto-Debug-armeabi-v7a": {
+      "artifactName": "mbedcrypto",
+      "buildCommand": "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a --target mbedcrypto",
+      "abi": "armeabi-v7a",
+      "output": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/libmbedcrypto.a"
+    },
+    "clogan-Debug-armeabi-v7a": {
+      "artifactName": "clogan",
+      "buildCommand": "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a --target clogan",
+      "abi": "armeabi-v7a",
+      "output": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/libclogan.a"
+    },
     "logan-Debug-armeabi-v7a": {
       "artifactName": "logan",
       "buildCommand": "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a --target logan",
       "abi": "armeabi-v7a",
       "output": "/Users/chenglei/flutter_project/flutter_project/clogger/example/build/clogger/intermediates/cmake/debug/obj/armeabi-v7a/liblogan.so"
+    },
+    "mbedx509-Debug-armeabi-v7a": {
+      "artifactName": "mbedx509",
+      "buildCommand": "/Users/chenglei/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a --target mbedx509",
+      "abi": "armeabi-v7a",
+      "output": "/Users/chenglei/flutter_project/flutter_project/clogger/android/.cxx/cmake/debug/armeabi-v7a/clogan.out/clogan.out/libmbedx509.a"
     }
   }
 }

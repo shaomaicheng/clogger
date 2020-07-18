@@ -1,4 +1,0 @@
-CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
-  CMake 3.16 or higher is required.  You are running version 3.6.0-rc2
-
-

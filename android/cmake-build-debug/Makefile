@@ -137,19 +137,6 @@ clogan/fast:
 .PHONY : clogan/fast
 
 #=============================================================================
-# Target rules for targets named filerw
-
-# Build rule for target.
-filerw: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 filerw
-.PHONY : filerw
-
-# fast build rule for target.
-filerw/fast:
-	$(MAKE) -f clogan.out/CMakeFiles/filerw.dir/build.make clogan.out/CMakeFiles/filerw.dir/build
-.PHONY : filerw/fast
-
-#=============================================================================
 # Target rules for targets named lib
 
 # Build rule for target.
@@ -201,32 +188,32 @@ mbedtls/fast:
 	$(MAKE) -f clogan.out/clogan.out/CMakeFiles/mbedtls.dir/build.make clogan.out/clogan.out/CMakeFiles/mbedtls.dir/build
 .PHONY : mbedtls/fast
 
-Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.o: Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o
+Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.o: Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o
 
-.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.o
+.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.o
 
 # target to build an object file
-Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o:
-	$(MAKE) -f CMakeFiles/logan.dir/build.make CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o
-.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.o
+Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o:
+	$(MAKE) -f CMakeFiles/logan.dir/build.make CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o
+.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.o
 
-Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.i: Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.i
+Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.i: Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.i
 
-.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.i
+.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.i
 
 # target to preprocess a source file
-Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.i:
-	$(MAKE) -f CMakeFiles/logan.dir/build.make CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.i
-.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.i
+Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.i:
+	$(MAKE) -f CMakeFiles/logan.dir/build.make CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.i
+.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.i
 
-Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.s: Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.s
+Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.s: Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.s
 
-.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.s
+.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.s
 
 # target to generate assembly for a file
-Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.s:
-	$(MAKE) -f CMakeFiles/logan.dir/build.make CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.s
-.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.c.s
+Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.s:
+	$(MAKE) -f CMakeFiles/logan.dir/build.make CMakeFiles/logan.dir/Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.s
+.PHONY : Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.c.s
 
 # Help Target
 help:
@@ -238,14 +225,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... logan"
 	@echo "... clogan"
-	@echo "... filerw"
 	@echo "... lib"
 	@echo "... mbedcrypto"
 	@echo "... mbedx509"
 	@echo "... mbedtls"
-	@echo "... Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.o"
-	@echo "... Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.i"
-	@echo "... Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/native_add.s"
+	@echo "... Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.o"
+	@echo "... Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.i"
+	@echo "... Users/chenglei/flutter_project/flutter_project/clogger/ios/Classes/cloger_logan.s"
 .PHONY : help
 
 
